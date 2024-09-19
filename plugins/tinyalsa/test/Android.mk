@@ -134,8 +134,7 @@ LOCAL_CFLAGS        += -Wno-unused-parameter -Wno-unused-result
 LOCAL_CFLAGS        += -Wno-unused-variable
 LOCAL_CFLAGS        += -DBACKEND_CONF_FILE=\"/vendor/etc/backend_conf.xml\"
 
-LOCAL_C_INCLUDES    += $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr/include
-LOCAL_ADDITIONAL_DEPENDENCIES += $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr
+LOCAL_HEADER_LIBRARIES := generated_kernel_headers
 
 LOCAL_SRC_FILES     := agmcompressplay.c
 
@@ -173,8 +172,7 @@ LOCAL_CFLAGS        += -Wno-unused-parameter -Wno-unused-result
 LOCAL_CFLAGS        += -Wno-incompatible-pointer-types
 LOCAL_CFLAGS        += -DBACKEND_CONF_FILE=\"/vendor/etc/backend_conf.xml\"
 
-LOCAL_C_INCLUDES    += $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr/include
-LOCAL_ADDITIONAL_DEPENDENCIES += $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr
+LOCAL_HEADER_LIBRARIES := generated_kernel_headers
 
 LOCAL_SRC_FILES     := agmcompresscap.c
 
